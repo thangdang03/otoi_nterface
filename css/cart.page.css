@@ -1,0 +1,46 @@
+#content2{
+    min-height: 400px;
+}
+#content2 h1{
+    position: absolute;
+    left: 500px;
+}
+.nested{
+    padding: 40px;
+}
+.ullist{
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0,0.3);
+    width: 1000px;
+    padding: 10px;
+    height: 80px;
+    border-radius: 20px;
+}
+.ullist li{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    width: 163px;
+    font-weight: 600;
+}
+.ullist img{
+    width: 100px;
+}
+
+.ullist button{
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;cursor: pointer;
+}
+
+.ullist button:hover{
+    border: 1px solid #f05626 ;
+    counter-reset: #A0A0A0;
+}
+
+#content2{
+    padding: 0 200px;
+}
+
+

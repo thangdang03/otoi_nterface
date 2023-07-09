@@ -1,0 +1,194 @@
+.contentv2{
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+}
+.grid-item{
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 840px  340px;
+    column-gap: 20px;
+    margin-top: 40px;
+}
+#list_link {
+    margin-top:10px ;
+    
+}
+#list_link > a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #818593;
+}
+
+#list_link > a:hover{
+    color: black;
+
+}
+.slider_detail{
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.slider_img{
+    display: none;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 132px;
+    margin-top: 20px;
+}
+.slider_img img{
+    width: 100%;
+    height: 70%;
+    
+}
+
+#slider_content{
+    width: 100%;
+    height: 700px;
+    background: white;
+    position: relative;
+}
+
+#slider_child{
+    display: flex;
+    column-gap: 10px;
+    height: 100px;
+    padding: 0 10px ;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+
+}
+.columt{
+    width: 90px;
+    height: 70px;
+    cursor: grab;
+}
+.columt:active{
+    cursor: grabbing;
+
+}
+.columt >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.font {
+    font-size: 30px;
+    position: absolute;
+    top: 350px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background: #A0A0A0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.next{
+    right: 0px;
+}
+
+.active{
+    border: 1px solid red;
+    opacity: 0.5;
+}
+
+#text {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+#text p{
+    font-size: 17px;
+    color: #A0A0A0;
+}
+
+#text h2{
+    margin: 20px 0px;
+    font-size: 22px;
+}
+
+#text h3{
+    margin: 20px 0px;
+}
+table{
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid rgba(0,0, 0, 0.1);
+    border-collapse: collapse;
+}
+td{
+    width: 50%;
+    height:50px;
+    padding-left: 20px;
+}
+td  i{
+    padding-right: 4px;
+}
+
+tr:nth-child(odd){
+    background-color: rgba(0,0, 0, 0.03);
+}
+
+.car_price{color: #f05626;}
+
+
+#gird_container2{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    grid-template-rows: repeat(330px,330px,330px);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-gap: 20px;
+}
+#gird_container2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 7px 7px 0px 0px;
+}
+.contact_mer{
+    height: fit-content;
+    padding: 10px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.contact_mer span{
+   padding: 20px 0px;
+   color: #818593;
+}
+
+.contact_mer i{
+  padding-right:10px ;
+}
+
+.contact_mer p{
+    margin: 10o;
+    margin: 20px 0px;
+    text-align: center;
+    background: #f05626;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.contact_mer div{
+    margin: 10o;
+    margin: 20px 0px;
+    text-align: center;
+    border: 1px #f05626 solid;
+    color: #f05626;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+}

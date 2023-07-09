@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.page.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.2.0-web/css/all.min.css">
+    <title>trang chủ</title>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+             <div class="item">
+                
+                <div class="list">
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/html/home.page.html" class="img_icon">
+                            <img src="https://choxe.vn/assets/img/logo_white.png" alt="icon" >
+                        </a></li>
+                       <li><a href="#">
+                            <i class="fa-solid fa-pen-to-square"></i><span>Card Audit</span>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa-regular fa-address-card"></i><span>thủ tục mua hàng</span>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa-regular fa-newspaper"></i><span>tin tức </span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="inputser">
+                    <form action="post" id="form">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="keysearch" id="keysearch" placeholder="tìm kiếm trong chợ xe">
+                    </form>
+                </div>
+                <div id="login">
+                    <img src="https://choxe.vn/assets/img/avatar_shape_white_20_20.png" alt="user">
+                    <span>
+                        Đăng nhập
+                    </span>
+                </div>
+                <div id="cart">
+                    <i class="fa-solid fa-cart-plus"></i><span>giỏ hàng</span>
+                </div>
+             </div>
+        </div>
+      
+        <div id="content">
+             <div class="container_content">
+                <div id="filter" >
+                    <div id="filter_icon">
+                        <i class="fa-solid fa-arrow-up-short-wide"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <select name="send_form" id="send_form">
+                                <option value="" >gửi từ</option>
+                                <option value="hà nội">hà nội</option>
+                                <option value="hồ chí minh">hồ chí minh</option>
+                                <option value="đà nẵng">đà nẵng</option>
+                                <option value="hưng yêu">hưng yêu</option>
+                            </select>
+                        </li>
+                        <li>
+                            <input type="number" name="car_year" id="car_year" max=2023 min=1950 placeholder="năm sản xuất" >
+                        </li>
+                        <li>
+                            <select name="car_manufacture" id="car_manufacture" >
+                                <option value="">hãng xe</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Suzuki">Suzuki</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="car_price">giá xe:</label>
+                              <input type="range" name="car_price" id="car_price" min=1 max=2000>
+                            <span class="price_value"></span>
+                        </li>
+                    </ul>
+                </div>
+                <h2>Tin đăng mới nhất </h2>
+                <div id="gird_container">
+
+                    <div class="grid_item">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipPJA1W3rAPK3xAArAOtYdTMu5rgRDbkTAotGV3t=s1360-w1360-h1020" alt="img_gird">
+                        <div class="text_grid">
+                            <div><a href="http://127.0.0.1:5500/html/detail.page.html?id=${data.id}">${data.car_name}</a></div>
+                            <h3>130px triệu</h3>
+                            <p> ha noi - 2020</p>
+                            <button class="addtocart" > thêm vào giỏ hàng</button>
+                        </div>
+                     </div>
+                       
+                </div>
+                <div id="showmore">
+                    xem thêm<i class="fa-solid fa-angles-right"></i>
+                </div>
+                <div id="salon_content">
+                    <h2>salon Ô tô</h2>
+                    <div id="salon_gird">
+                        <div class="grid_item_salon">
+                            <img src="${data.salon_thumn}" alt="">
+                            <div class="text_salon">
+                                <a href="#">${data.salon_name}</a>
+                                    <p> <i class="fa-solid fa-location-dot"></i> ${data.salon_adress}</p>
+                                    <p><i class="fa-solid fa-phone"></i>${data.salon_phone}</p>
+                            </div>
+                        </div>
+                        <div class="grid_item_salon">
+                            <img src="${data.salon_thumn}" alt="">
+                            <div class="text_salon">
+                                <a href="#">${data.salon_name}</a>
+                                    <p> <i class="fa-solid fa-location-dot"></i> ${data.salon_adress}</p>
+                                    <p><i class="fa-solid fa-phone"></i>${data.salon_phone}</p>
+                            </div>
+                         </div>
+                         <div class="grid_item_salon">
+                            <img src="${data.salon_thumn}" alt="">
+                            <div class="text_salon">
+                                <a href="#">${data.salon_name}</a>
+                                    <p> <i class="fa-solid fa-location-dot"></i> ${data.salon_adress}</p>
+                                    <p><i class="fa-solid fa-phone"></i>${data.salon_phone}</p>
+                            </div>
+            </div>
+            <div class="grid_item_salon">
+                <img src="${data.salon_thumn}" alt="">
+                <div class="text_salon">
+                    <a href="#">${data.salon_name}</a>
+                        <p> <i class="fa-solid fa-location-dot"></i> ${data.salon_adress}</p>
+                        <p><i class="fa-solid fa-phone"></i>${data.salon_phone}</p>
+                </div>
+</div>
+                    </div>
+                </div>
+                <div class="production">
+                    <h2>salon Ô tô</h2>
+                    <div id="production_gird">
+                         <div id="item_production" aria-colindex="1">
+                            <a href="#">
+                                 <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/eOSjSo0gO8zg3aHRY4hpcC5hoLIfgYB47RZLyJF4.png" alt="toyota">
+                                 <p title="toyota">toyota</p>
+                            </a>
+                        </div>
+                         <div id="item_production" aria-colindex="2">
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/hxYUSrBgsJGbgHENtd1chtBB19r1ksXHzQaPEAwr.png" alt="">
+                            <p>Hyundai</p>
+                            </a>
+                        </div>
+                         <div id="item_production">
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/uvICoTdobRIpiAXOixCuqkkLZz3s31JrMXLcm4Ap.png" alt="">
+                                <p>KIA</p>
+                            </a>
+                        </div>
+                         <div id="item_production">
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/b1jG5dKj26eRha1W4N18eDTmnRFtpQv4WaYoAQvx.png" alt="">
+                                 <p>VinFast</p>
+                            </a>
+                        </div>
+                         <div id="item_production">
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/SyCd75asAUtvOi47Xo8hhRwrUMFCzqVyMdTX4v1n.png" alt="">
+                                <p>Mitsubishi</p>
+                            </a>
+                        </div>
+                         <div id="item_production">
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/Ivm3NQ38jfj7OB9CnvnrY832QuWVde0VS1zVxD6A.png" alt="">
+                                <p>Mazda</p>
+                            </a>
+                        </div>
+                         <div id="item_production">
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/HIsRavXij0eXRvpan2rQ6hhK1x0xE5AQZQulMAwh.png" alt="">
+                                <p>Ford</p>
+                            </a>
+                        </div>
+                         <div id="item_production">
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/EUz8F51M2NxCyY6z4XTb9A2uBGxBRjeUIi6DdrBj.png" alt="">
+                                <p>Honda</p>
+                            </a>
+                        </div>
+                         <div id="item_production" >
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/6gUqToXRpeo5wtrKZA7AerqzFRZWvDAOHvedLR8L.png" alt="">
+                                <p>Suzuki</p>
+                            </a>
+                        </div>
+                         <div id="item_production"  >
+                            <a href="#" >
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/rflImCxyuFYRqhhufOzm49pxkBlTFElThgyp4gvz.png" alt="">
+                                <p>Mercedes-Benz</p>
+                            </a>
+                        </div>
+                         <div id="item_production">
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/GKp6EsreSG6EE6M4FGbwyTqtqW92dgs0gySJrgIm.png" alt="">
+                                <p>BMW</p>
+                            </a>
+                        </div>
+                         <div id="item_production">
+                            <a href="#">
+                                <img src="https://cdn1.otosaigon.com/data/carinfo/20211018/B1WGu56r65M1CX2G7MwdsZBlsdtAn8sYkC6I7iz2.png" alt="">
+                                <p>Audi</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <img src="https://choxe.vn/assets/img/logo_white.png" class="information_img" alt="icon" >
+            <div class="information">
+                <div class="contact">
+                     <p>©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô Xuyên Việt; Mã số thuế: 0304013473</p>
+                     <p>Lầu 1, B5-B6 Khu Kim Sơn - Đường Nguyễn Hữu Thọ, phường Tân Phong, Quận 7, TPHCM</p>
+                     <p>©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô Xuyên Việt; Mã số thuế: 0304013473</p>
+                     <a href="#" class="contact_item" >
+                        <i class="fa-solid fa-envelope"></i> <span>cskh@choxe.vn</span> 
+                    </a>
+                    <a   href="#" class="contact_item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>cskh@choxe.vn</span> 
+                    </a>
+                    <img src="https://choxe.vn/assets/img/logo-bct.png" alt="">
+                </div>
+                <div class="introductio">
+                    <a href="#">giới thiệu</a>
+                    <a href="#">QUY CHẾ HOẠT ĐỘNG</a>
+                    <a href="#">BÁO GIÁ</a>
+                </div>  
+                <div class="phoneandconact">
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <span> Hotline: 091.144.2883</span> 
+                    </div>
+                    <div class="salon">
+                        <i class="fa-solid fa-house-user"></i><span>Dành cho Salon, Môi giới</span>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="../javascript/home.page.js" >
+    
+    </script>
+</body>
+</html>
+
